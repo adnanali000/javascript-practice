@@ -1,5 +1,5 @@
-//class 1 extensions
-// class2 console
+                   //class 1 extensions
+                  // class2 console
 
 // console.time("Your code took");
 // console.log("hello world");
@@ -15,7 +15,7 @@
 // console.error("this is an error");
 
 
-//class 3 let,const,var
+                  //class 3 let,const,var
 
 /*
 rules for assigning variable
@@ -25,6 +25,8 @@ rules for assigning variable
 3.are case sensitive
 
 */
+
+//examples
 
 // var name = "hello world";
 // var first_name = "hello";
@@ -63,5 +65,90 @@ rules for assigning variable
 4.PascalCase
 */
 
-// class 4
+            // class 4 Data types(primitive and reference types)
+
+ //Primitive dataTypes(stack) : string("any name"),number(123),boolean(T,F),null(),undefined(''),symbol(es6)
+
+//string
+let name = "hello world";
+console.log("my name is",name);
+console.log("my dataType is",(typeof name));
+
+//numbers
+let marks = 80;
+console.log("my marks is",marks);
+console.log("DataType is",(typeof marks));
+
+
+//boolean
+let isDriver = true;
+console.log("DataType : ",typeof isDriver);
+
+//null
+let isVal = null;
+console.log("DataType: ",typeof isVal);
+
+//undefined
+let isUnd = undefined;
+console.log("DataType: ",typeof isUnd);
+
+
+ //reference dataTYpe(heap) : Arrays,object literal,function,dates
+
+ //arrays
+let arr = [1,2,"tesla",4,true];
+console.log("DataType: ",typeof arr);
+
+//objects literals
+
+let data = {
+    name:"tesla",
+    owner:"elan musk"
+}
+console.log("DataType: ",typeof data);
+
+//function
+
+function findname() {
+    
+}
+console.log("DataType: ",typeof findname);
+
+
+//date
+
+let date = new Date();
+console.log("DataType: ",typeof date);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
 
