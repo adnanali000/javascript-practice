@@ -65,9 +65,13 @@ rules for assigning variable
 4.PascalCase
 */
 
+
+
             // class 4 Data types(primitive and reference types)
 
  //Primitive dataTypes(stack) : string("any name"),number(123),boolean(T,F),null(),undefined(''),symbol(es6)
+
+ /*
 
 //string
 let name = "hello world";
@@ -120,14 +124,69 @@ console.log("DataType: ",typeof findname);
 let date = new Date();
 console.log("DataType: ",typeof date);
 
+*/
+
+             //class 5 type conversion & coercion
+
+let myVar;
+myVar = 30;
+console.log(myVar,typeof myVar);
+
+//conversion of variable from number to string
+myVar = String(34);
+console.log(myVar,typeof myVar);
+
+//boolean to string
+let booleanVal = String(true);
+console.log(booleanVal,typeof booleanVal);
+
+//date to string
+let date = String(new Date());
+console.log(date,typeof date);
+
+//arr to string
+let arr = String([1,2,3,4,5]);
+console.log(arr.length,typeof arr); //length 9
+
+let arr2 = [1,2,3,4,5];
+console.log(arr2.length,typeof arr2); //length 5
+
+//Another method to convert into string
+let i = 9;
+console.log(i.toString());
+
+//conversion into number
+let str1 = "3232";
+console.log(str1,typeof str1);
+
+str1 = Number(str1);
+console.log(str1,typeof str1);
+
+//parse int and parse float
+
+let number ='34';
+console.log(number,typeof number);
+
+number =parseInt('34');
+console.log(number,typeof number);
+
+number =parseInt('34.46');
+console.log(number,typeof number);
+
+number =parseFloat('34.46');
+console.log(number,typeof number);
+
+console.log(number.toFixed(1));
 
 
+//type coercion
 
+let myStr = "110";
+let myNum = 32;
+console.log(myStr + myNum); //11032
 
-
-
-
-
+myStr = Number(myStr);
+console.log(myStr + myNum); //142
 
 
 
