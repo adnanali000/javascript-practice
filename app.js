@@ -326,8 +326,9 @@ marks = marks.concat(marks2);
 console.log(marks);
 */
 
-                         //objects
-//we use object when we have key pair value
+                         //objects                         
+        
+        //we use object when we have key pair value
 /*
 
 let myObj = {
@@ -341,13 +342,95 @@ console.log(myObj.marks);
 
 */
 
+                     //class 8 if else
+
+/*
+
+const age = 44;
+
+if(age == 20){
+    console.log("age is 20");
+}
+else if(age == 44){
+    console.log("age is 44"); //print
+}
+else{
+    console.log("age is not 20");
+}
 
 
+const age2 = '44';
+
+if(age2 === 20){
+    console.log("age is 20");
+}
+else if(age2 === 44){
+    console.log("age is 44");
+}
+else{
+    console.log("age is not 20"); //print
+}
 
 
+const age3 = 44;
+
+if(age3 != 20){
+    console.log("age is 20");
+}
+else if(age3 !== 44){
+    console.log("age is 44");
+}
+else{
+    console.log("age is not 20");
+}
+
+//to check the existcance of any variable
+
+//const num = 6;
+
+if(typeof num !== 'undefined'){
+    console.log("num is defined");
+}
+else{
+    console.log("num is not defined"); //print
+}
+
+const doesDrive = true;
+
+if(doesDrive && age > 18){
+    console.log("you can drive"); //print
+}
+else{
+    console.log("you can't");
+}
+
+if(doesDrive || age < 18){
+    console.log("you can drive"); //print
+}
+else{
+    console.log("you can't");
+}
 
 
+                   //ternary operator
 
+console.log(age == 44?'age is 44':'age is not 44');
+
+                //switch case
+
+switch(18){
+    case 18:
+        console.log("you are 18")
+        break;
+    case 28:
+        console.log("you are 28");
+        break;    
+    default:
+        console.log("define your age");
+        break;    
+}
+
+*/
 
 
 
