@@ -194,6 +194,7 @@ console.log(myStr + myNum); //142
 
 
         //class 6 properties method and template lietrals
+/*
 
 console.log("class 6");
 
@@ -265,6 +266,98 @@ let myHtml = `Hello ${name}
               <p>You like ${fruit1} and ${fruit2};
               `;
 document.body.innerHTML = myHtml;
+
+*/
+
+       //class 7 Arrays and Objects
+                
+                     //ARRAY
+/*
+let marks = [35,45,80,77];
+const fruits = ['apple','orange','banana'];
+const mixed = ['str',44,[3,4]];
+const arr = new Array(23,34,54,'hello world');
+
+console.log(arr);
+console.log(mixed);
+console.log(fruits);
+console.log(marks);
+console.log(Array.isArray('arr'));//false
+console.log(Array.isArray(arr));//true
+
+arr[0] = 'USA';
+console.log(arr);
+
+let val = arr[3];
+console.log(val);
+
+console.log(marks);
+let value = marks.indexOf(80);
+console.log(value);
+
+//mutating or modifying arrays
+//push
+marks.push(100);
+console.log(marks)
+
+//unshift
+marks.unshift(110);
+console.log(marks);
+
+//pop
+marks.pop();
+console.log(marks);
+
+//shift
+marks.shift()
+console.log(marks);
+
+//splice
+marks.splice(1,2);
+console.log(marks);
+
+//reverse
+marks.reverse();
+console.log(marks);
+
+//concat Array
+let marks2 = [35,45,55];
+marks = marks.concat(marks2);
+console.log(marks);
+*/
+
+                         //objects
+//we use object when we have key pair value
+/*
+
+let myObj = {
+    name: "adnan",
+    'my class': "class 6",
+    isActive: true,
+    marks: [1,2,3,55,6]
+}
+console.log(myObj['my class']);
+console.log(myObj.marks);
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
