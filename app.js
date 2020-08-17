@@ -128,6 +128,8 @@ console.log("DataType: ",typeof date);
 
              //class 5 type conversion & coercion
 
+/*
+
 let myVar;
 myVar = 30;
 console.log(myVar,typeof myVar);
@@ -188,7 +190,81 @@ console.log(myStr + myNum); //11032
 myStr = Number(myStr);
 console.log(myStr + myNum); //142
 
+*/
 
+
+        //class 6 properties method and template lietrals
+
+console.log("class 6");
+
+const name = "Watson";
+const greeting = "Good Morning";
+console.log(greeting + ' ' +name);
+
+//concatinate function
+
+let html;
+html = "<h1>Hello World</h1>";
+
+// console.log(html)
+// html = html.concat('this is my page',' how are you');
+// console.log(html)
+
+//find length
+
+        // console.log(html.length)
+
+//change case
+
+// console.log(html.toLowerCase());
+// console.log(html.toUpperCase());
+// console.log(html);
+
+
+//index
+
+console.log(html[1]);
+
+//indexOf
+
+console.log(html.indexOf('W'));
+
+//last indexOf
+console.log(html.lastIndexOf('l'))
+
+//charAt
+console.log(html.charAt(10))
+
+//endswith
+console.log(html.endsWith(">")); //true
+
+//includes
+console.log(html.includes('Hello')); //true
+
+//substring
+console.log(html.substring(0,4));
+
+//slice
+console.log(html.slice(0,4));
+
+//split
+console.log(html.split(' '));
+
+
+//replace
+console.log(html.replace('Hello','Hey'));
+
+
+
+                   //template literals
+
+let fruit1 = 'apple';
+let fruit2 = 'oranges';                   
+let myHtml = `Hello ${name}
+              <h1>This is "my" heading</h1>
+              <p>You like ${fruit1} and ${fruit2};
+              `;
+document.body.innerHTML = myHtml;
 
 
 
