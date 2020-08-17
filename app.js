@@ -433,8 +433,80 @@ switch(18){
 */
 
 
+      //class 9 for,while and do while loop
+
+//types of loop: for while and do while
+
+//let a = 2;
+//a = a+1;
+// a++
+// console.log(a); //3
+
+//for loop
+
+// for(let i = 0; i < 100; i++){
+//     console.log(i);
+// }
+
+//while loop
+
+// let j = 0;
+
+// while(j < 100){
+//     console.log(j);
+//     j++;
+// }
 
 
+//do while
+
+// let k = 0;
+// do{
+//     console.log(k);
+//     k++;
+// }while(k < 10);
+
+//break and continue
+
+// let l = 0;
+// do{
+//     console.log(l);
+//     if(l === 5){
+//         break;
+//     }
+//     l++
+// }while(l < 10);
+// console.log("done");
+
+
+// let m = 0;
+// do{
+//     if(m === 5){
+//         m++;
+//         continue;
+//     }
+//     console.log(m);
+//     m++;
+// }while(m < 10);
+
+
+              //for each
+
+// let arr = [1,2,3,4,5];
+// arr.forEach(function(values,index,array){
+//     console.log(values,index,array);
+// });
+
+
+// let obj = {
+//     name: "salman",
+//     age: 20,
+//     type: "programmer",
+//     OS: "ubuntu"
+// }
+// for(let key in obj){
+//     console.log(`The ${key} of object is ${obj[key]}`);
+// }
 
 
 
