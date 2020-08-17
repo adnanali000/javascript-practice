@@ -508,13 +508,51 @@ switch(18){
 //     console.log(`The ${key} of object is ${obj[key]}`);
 // }
 
+             
+              //class10 function and scope
+
+/*              
+function greet(name,thank = 'thanks a lot') {
+    console.log(`Hello ${name} good morning ${thank}`);
+
+    return "done";
+}
+greet("Ali","thanks for your visit");
+
+let x = greet("Ali","thanks for your visit");
+
+console.log(x); //done
+ 
 
 
+let msg = function(message) {
+    return message;
+}
+let messag = msg("hey how are you");
+console.log(messag);
 
 
+let myself = {
+    name: "adnan",
+    game: function() {
+        return "CS 1.6"
+        
+    }
+} 
+console.log(myself.game());
+*/
 
+{
+let i = 12;
+console.log(i); //12
+}
 
-
+function check() {
+    i = 13;
+    return i; //13
+}
+console.log(check());
+console.log(i) //13
 
 
 
