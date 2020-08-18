@@ -540,7 +540,7 @@ let myself = {
     }
 } 
 console.log(myself.game());
-*/
+
 
 {
 let i = 12;
@@ -553,6 +553,73 @@ function check() {
 }
 console.log(check());
 console.log(i) //13
+
+*/
+
+         //class 11 DOM window object
+
+// let a = window;
+// console.log(a);
+
+// a = prompt("this will destroy your computer");
+// console.log(a);
+
+// a = confirm('are you sure you want to delete this page')
+// console.log(a);
+
+
+// let x = window
+// x = window.document;
+// x = window.innerHeight;
+// x = window.innerHeight;
+// x = scrollX
+// x = scrollY
+// x = location
+// x = location.href
+// //x = location.href = "//google.com"
+// x = location.toString()
+// x = history
+// x = history.go(1); //1 page forward
+// x = history.go(-1); //1 page backward
+// console.log(x);
+
+
+
+         //class 12 understanding DOM
+
+//  let x = document;
+//  x = document.body;
+//  x = document.forms[0];
+//  x = document.all;
+
+ //error becasue document.all values are not in array
+//  x.forEach(function(element){
+//  console.log(element)
+//  })
+
+//solution
+
+// Array.from(x).forEach(function(element,index){
+//     console.log(element,index);
+// })
+ 
+// x = document.links;
+// x = document.links[0];
+// x = document.links[0].href;
+// x = document.images;
+// x = document.images[1];
+// x = document.images[1].src;
+// x = document.scripts
+// x = document.scripts[0].src;
+
+
+// console.log(x);
+
+
+
+
+
+
 
 
 
