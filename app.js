@@ -616,27 +616,294 @@ console.log(i) //13
 // console.log(x);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  
+        //   class 13 page crawler
+        //Exercise 1
+/*
+
+let a = "google";
+
+let link = document.links;
+
+Array.from(link).forEach(function(element,index){
+ 
+    if(element.href.includes(a) == true){
+             console.log(element,index)
+   }
+ 
+})
+
+*/
+
+
+        // class 14 Element DOM selectors
+
+/*
+element selector:
+1.single element selector
+2.multi elements selector
+*/
+
+             //single element selector
+
+//let element = document.getElementById('myfirst');
+//element = element.className;
+//element = element.parentNode;
+//element = element.childNodes;
+// element.style.color = "red";
+// element.innerText = "CHILD 1"
+// element.innerHTML = "<b>Child 1</b>"
+// console.log(element.innerHTML)
+
+
+// let sel = document.querySelector('#myfirst');
+// sel = document.querySelector('.child')
+// sel = document.querySelector('h1')
+// console.log(sel);
+
+
+               //multi elements selector
+
+// let elebyClas = document.getElementsByClassName('child');
+
+// elebyClas = document.getElementsByClassName('container');
+
+// console.log(elebyClas[0].getElementsByClassName('child'));
+
+//let eleByTag = document.getElementsByTagName('div');
+//console.log(eleByTag);
+
+// Array.from(eleByTag).forEach(function(element){
+//     element.style.color = "red";
+// })
+
+             
+                //Class 15
+            //child parent & traversing the dom
+
+//  let cont = document.querySelector('.no');
+//  cont = document.querySelector(".container");  
+//  let nodeName = cont.childNodes[1].nodeName;
+//  let nodeType = cont.childNodes[1].nodeType;
+
+//  console.log(nodeName);
+//  console.log(nodeType)
+ 
+ //Node types
+ // 1 = Element
+ // 2 = attribute
+ // 3 = text node
+ // 8 = comment
+ // 9 = document
+ // 10 = doctype 
+
+ //console.log(cont.childNodes); //show garbage        
+ 
+ //console.log(cont.children); //remove garbage           
+
+
+
+//let container = document.querySelector('.container');
+
+//console.log(container.children[1].children[0].children); //print child1 list
+
+//console.log(container.firstElementChild);//remove text and comment
+
+//console.log(container.lastChild);
+//console.log(container.lastElementChild);
+
+//console.log(container.childElementCount);
+//console.log(container.children)
+
+//console.log(container.firstElementChild.parentNode);
+//console.log(container.firstElementChild.nextSibling);
+//console.log(container.firstElementChild.nextElementSibling.nextElementSibling);
+
+
+          //class 16 creating elements
+
+          /*
+let element = document.createElement('li');
+// console.log(element);
+let text = document.createTextNode('I am a text node');
+element.appendChild(text);
+element.className = 'childul';
+element.id = 'createdLi';
+element.setAttribute('title','mytitle');
+//element.innerHTML = "<b>This is created by DOM</b>"
+
+let ul = document.querySelector("ul.this");
+ul.append(element);
+console.log(ul);
+
+
+   //replace element
+
+let ele2 = document.createElement('h2');
+ele2.className = 'ele2';
+ele2.id = 'ele2';
+let text2 = document.createTextNode('Hello i am replaced element');
+ele2.appendChild(text2);
+console.log(ele2);
+element.replaceWith(ele2);
+
+   
+      //replace child
+
+let myul = document.getElementById('myul');
+myul.replaceChild(element,document.getElementById('fui'));
+
+       //remove element
+
+myul.removeChild(document.getElementById('lui'));
+
+      //get attributes
+
+let att = ele2.getAttribute('id');
+att = ele2.getAttribute('class');
+console.log(ele2);
+console.log(att);
+
+att = ele2.hasAttribute('class'); //true
+att = ele2.hasAttribute('img'); //false
+console.log(att);
+
+  //remove attributes
+
+ele2.removeAttribute('id');
+console.log(ele2);
+ele2.setAttribute('title','myele2 title');
+console.log(ele2);
+*/
+
+
+          //quick quiz
+
+// let link = document.getElementById('link');
+// let a = document.createElement('a');
+// let textA = document.createTextNode('google');
+// a.appendChild(textA);
+// a.href = '//google.com';
+// a.target = '_blank'
+// link.appendChild(a);
+
+
+// a.style.color = 'red';
+// a.style.fontFamily = 'Arial';
+// a.style.textDecoration = 'none';
+
+
+         //class 17 Evenets
+
+// document.getElementById('heading').addEventListener('click',function(){
+//     console.log('you clicked the heading');
+//     //location.href = "//google.com"
+// })       
+
+
+// document.getElementById('heading').addEventListener('mouseover',function(e){
+//     let val;
+
+//     val = e.target;
+//     val = e.target.className;
+//     val = Array.from(e.target.className);
+//     val = e.target.id;
+//     val = e.offsetX
+//     val = e.offsetY
+//     val = e.clientX
+//     val = e.clientY
+//     console.log(val);
+// })     
+
+        
+            //class18 more about events
+
+// let btn = document.getElementById('btn');
+// btn.addEventListener('click',fun1);
+// btn.addEventListener('dblclick',fun2);
+// btn.addEventListener('mousedown',fun3);
+
+
+// function fun1(e) {
+//     console.log("Thanks",e)
+//     e.preventDefault();
+// }
+ 
+// function fun2(e){
+//     console.log("Thans its a double click",e)
+//     e.preventDefault();
+// }         
+
+// function fun3(e){
+//     console.log("Thanks its a mouse down")
+//     e.preventDefault();
+// }
+
+
+// document.querySelector('.no').addEventListener('mouseenter',function(){
+//     console.log('you entered no')
+// })
+
+
+// document.querySelector('.no').addEventListener('mouseleave',function(){
+//     console.log('you exited no')
+// })
+
+
+// document.querySelector('.container').addEventListener('mousemove',function(e){
+//     console.log(e.offsetX,e.offsetY);
+//     document.body.style.backgroundColor = `rgb(${e.offsetX},${e.offsetY},135)`
+//     console.log('you triggered mouse move');
+// })
+
+
+            // class 19 
+            
+//excercise 1 solution
+
+// let str = "python";
+// let links = document.links
+// console.log(links)
+// let href;
+// Array.from(links).forEach(function(element){
+//   href = element.href;
+//   if(href.includes(str)){
+//       console.log(str);
+//   }
+// })
+
+
+          //class 20 local & session storage
+
+//item set in local storage
+//  localStorage.setItem('Name','Hello World');
+//  localStorage.setItem('Nam2','Hey World');
+
+//item get from local storage
+//let name = localStorage.getItem('Name');
+//console.log(name);
+
+//item clear from local storage
+//localStorage.clear();
+
+//clear particular value
+//localStorage.removeItem('Name2');
+
+//console.log(localStorage)
+
+//let arr = ['red','green','blue'];
+//localStorage.setItem('colour',JSON.stringify(arr));
+
+//retrieve value
+//let val = JSON.parse(localStorage.getItem('colour'));
+//console.log(val)
+
+
+
+               //session storage
+
+sessionStorage.setItem('SessionName','Hello World');
+sessionStorage.setItem('SessionNam2','Hey World');
+sessionStorage.setItem('Sessioncolour',JSON.stringify(arr));
 
 
