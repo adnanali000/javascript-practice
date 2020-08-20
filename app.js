@@ -902,8 +902,162 @@ console.log(ele2);
 
                //session storage
 
-sessionStorage.setItem('SessionName','Hello World');
-sessionStorage.setItem('SessionNam2','Hey World');
-sessionStorage.setItem('Sessioncolour',JSON.stringify(arr));
+// sessionStorage.setItem('SessionName','Hello World');
+// sessionStorage.setItem('SessionNam2','Hey World');
+// sessionStorage.setItem('Sessioncolour',JSON.stringify(arr));
+
+
+           //class 21
+
+//excercise 2 , creating editable doiv using javascript
+
+
+// document.querySelector('.no').addEventListener('click',function(){
+//     let x = prompt('edit your value');
+//     let y = document.querySelector('.no');
+//     y.innerHTML = x;
+//     localStorage.setItem('editValue',x);
+// })
+
+
+            //class 22-23 Math object
+/*
+
+let x = 3;
+let y = 6;
+let z;
+z = x+y;
+z = x-y;
+z = x*y;
+z = x/y;
+
+//Exploring math object
+
+z = Math;
+z = Math.PI;
+z = Math.E;
+z = Math.round(5.5);//6
+z = Math.ceil(5.3);//6
+z = Math.floor(5.3);//5
+z = Math.abs(-5.3);//5.3
+z = Math.sqrt(49);//7
+z = Math.pow(5,2);//25
+z = Math.min(5,2,50,2,1);//1
+z = Math.max(5,2,5,23,1);//23
+z = Math.random();
+z = Math.ceil(50 + (100-50)*Math.random());//50-100
+
+console.log(z);
+
+*/
+
+/*
+a = (0,1);
+a100 = a*100 = (0,100);
+a10_100 = 10 + a*(100-1);
+*/
+
+            //class 24 Date and time Object
+
+/*
+
+let today = new Date();
+//console.log(today);            
+
+let otherDate = new Date('June 13 1988');
+otherDate = new Date();
+console.log(otherDate)
+
+let a;
+a = otherDate.getDay();
+a = otherDate.getDate();
+a = otherDate.getMinutes();
+a = otherDate.getSeconds();
+a = otherDate.getHours();
+a = otherDate.getMilliseconds();
+a = otherDate.getMonth();
+console.log(a);
+
+otherDate.setDate(24);
+otherDate.setMonth(1);
+otherDate.setFullYear(2020);
+otherDate.setMinutes(2);
+otherDate.setHours(1);
+otherDate.setMilliseconds(3);
+
+console.log(otherDate)
+
+*/
+
+       //class 25 excercise 2 solution
+
+
+ //create element      
+               
+let divElement = document.createElement('div');
+
+//add text
+let val = localStorage.getItem('text');
+let text;
+if(val == null){
+   text = document.createTextNode("This is my Element, click to edit")
+}
+else{
+    text = document.createTextNode(val);
+}
+divElement.appendChild(text)
+
+//assign style id and class to element
+divElement.setAttribute('id','elem');
+divElement.setAttribute('class','elem');
+divElement.setAttribute('style','border:2px solid red; width:200px; margin:54px padding:25px; margin-bottom:10px');
+
+//get the main container
+let container = document.querySelector(".container");
+let first = document.getElementById("myfirst");
+
+//insert element before myFirst
+container.insertBefore(divElement,first);
+
+//add event listner to divElement
+
+divElement.addEventListener('click',function(){
+    let noTextArea = document.getElementsByClassName('textarea').length;
+
+    if(noTextArea == 0){
+    let html = elem.innerHTML
+    divElement.innerHTML =  `<textarea class="textarea form-control" id="textarea" rows="3">${html}</textarea>`;
+
+    //listen for the blur event on text area
+    let textarea = document.getElementById('textarea');
+    textarea.addEventListener('blur',function(){
+        elem.innerHTML = textarea.value;
+        localStorage.setItem('text',textarea.value);
+
+    })
+}
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
