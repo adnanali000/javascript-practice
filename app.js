@@ -1,5 +1,5 @@
-                   //class 1 extensions
-                  // class2 console
+//class 1 extensions
+// class2 console
 
 // console.time("Your code took");
 // console.log("hello world");
@@ -15,7 +15,7 @@
 // console.error("this is an error");
 
 
-                  //class 3 let,const,var
+//class 3 let,const,var
 
 /*
 rules for assigning variable
@@ -67,11 +67,11 @@ rules for assigning variable
 
 
 
-            // class 4 Data types(primitive and reference types)
+// class 4 Data types(primitive and reference types)
 
- //Primitive dataTypes(stack) : string("any name"),number(123),boolean(T,F),null(),undefined(''),symbol(es6)
+//Primitive dataTypes(stack) : string("any name"),number(123),boolean(T,F),null(),undefined(''),symbol(es6)
 
- /*
+/*
 
 //string
 let name = "hello world";
@@ -97,24 +97,24 @@ let isUnd = undefined;
 console.log("DataType: ",typeof isUnd);
 
 
- //reference dataTYpe(heap) : Arrays,object literal,function,dates
+//reference dataTYpe(heap) : Arrays,object literal,function,dates
 
- //arrays
+//arrays
 let arr = [1,2,"tesla",4,true];
 console.log("DataType: ",typeof arr);
 
 //objects literals
 
 let data = {
-    name:"tesla",
-    owner:"elan musk"
+   name:"tesla",
+   owner:"elan musk"
 }
 console.log("DataType: ",typeof data);
 
 //function
 
 function findname() {
-    
+   
 }
 console.log("DataType: ",typeof findname);
 
@@ -126,7 +126,7 @@ console.log("DataType: ",typeof date);
 
 */
 
-             //class 5 type conversion & coercion
+//class 5 type conversion & coercion
 
 /*
 
@@ -193,7 +193,7 @@ console.log(myStr + myNum); //142
 */
 
 
-        //class 6 properties method and template lietrals
+//class 6 properties method and template lietrals
 /*
 
 console.log("class 6");
@@ -269,9 +269,9 @@ document.body.innerHTML = myHtml;
 
 */
 
-       //class 7 Arrays and Objects
-                
-                     //ARRAY
+//class 7 Arrays and Objects
+
+//ARRAY
 /*
 let marks = [35,45,80,77];
 const fruits = ['apple','orange','banana'];
@@ -326,9 +326,9 @@ marks = marks.concat(marks2);
 console.log(marks);
 */
 
-                         //objects                         
-        
-        //we use object when we have key pair value
+//objects                         
+
+//we use object when we have key pair value
 /*
 
 let myObj = {
@@ -342,7 +342,7 @@ console.log(myObj.marks);
 
 */
 
-                     //class 8 if else
+//class 8 if else
 
 /*
 
@@ -433,7 +433,7 @@ switch(18){
 */
 
 
-      //class 9 for,while and do while loop
+//class 9 for,while and do while loop
 
 //types of loop: for while and do while
 
@@ -490,7 +490,7 @@ switch(18){
 // }while(m < 10);
 
 
-              //for each
+//for each
 
 // let arr = [1,2,3,4,5];
 // arr.forEach(function(values,index,array){
@@ -508,8 +508,8 @@ switch(18){
 //     console.log(`The ${key} of object is ${obj[key]}`);
 // }
 
-             
-              //class10 function and scope
+
+//class10 function and scope
 
 /*              
 function greet(name,thank = 'thanks a lot') {
@@ -556,7 +556,7 @@ console.log(i) //13
 
 */
 
-         //class 11 DOM window object
+//class 11 DOM window object
 
 // let a = window;
 // console.log(a);
@@ -585,14 +585,14 @@ console.log(i) //13
 
 
 
-         //class 12 understanding DOM
+//class 12 understanding DOM
 
 //  let x = document;
 //  x = document.body;
 //  x = document.forms[0];
 //  x = document.all;
 
- //error becasue document.all values are not in array
+//error becasue document.all values are not in array
 //  x.forEach(function(element){
 //  console.log(element)
 //  })
@@ -602,7 +602,7 @@ console.log(i) //13
 // Array.from(x).forEach(function(element,index){
 //     console.log(element,index);
 // })
- 
+
 // x = document.links;
 // x = document.links[0];
 // x = document.links[0].href;
@@ -616,9 +616,9 @@ console.log(i) //13
 // console.log(x);
 
 
- 
-        //   class 13 page crawler
-        //Exercise 1
+
+//   class 13 page crawler
+//Exercise 1
 /*
 
 let a = "google";
@@ -636,7 +636,7 @@ Array.from(link).forEach(function(element,index){
 */
 
 
-        // class 14 Element DOM selectors
+// class 14 Element DOM selectors
 
 /*
 element selector:
@@ -644,7 +644,7 @@ element selector:
 2.multi elements selector
 */
 
-             //single element selector
+//single element selector
 
 //let element = document.getElementById('myfirst');
 //element = element.className;
@@ -662,7 +662,7 @@ element selector:
 // console.log(sel);
 
 
-               //multi elements selector
+//multi elements selector
 
 // let elebyClas = document.getElementsByClassName('child');
 
@@ -677,9 +677,9 @@ element selector:
 //     element.style.color = "red";
 // })
 
-             
-                //Class 15
-            //child parent & traversing the dom
+
+//Class 15
+//child parent & traversing the dom
 
 //  let cont = document.querySelector('.no');
 //  cont = document.querySelector(".container");  
@@ -688,18 +688,18 @@ element selector:
 
 //  console.log(nodeName);
 //  console.log(nodeType)
- 
- //Node types
- // 1 = Element
- // 2 = attribute
- // 3 = text node
- // 8 = comment
- // 9 = document
- // 10 = doctype 
 
- //console.log(cont.childNodes); //show garbage        
- 
- //console.log(cont.children); //remove garbage           
+//Node types
+// 1 = Element
+// 2 = attribute
+// 3 = text node
+// 8 = comment
+// 9 = document
+// 10 = doctype 
+
+//console.log(cont.childNodes); //show garbage        
+
+//console.log(cont.children); //remove garbage           
 
 
 
@@ -720,9 +720,9 @@ element selector:
 //console.log(container.firstElementChild.nextElementSibling.nextElementSibling);
 
 
-          //class 16 creating elements
+//class 16 creating elements
 
-          /*
+/*
 let element = document.createElement('li');
 // console.log(element);
 let text = document.createTextNode('I am a text node');
@@ -737,7 +737,7 @@ ul.append(element);
 console.log(ul);
 
 
-   //replace element
+//replace element
 
 let ele2 = document.createElement('h2');
 ele2.className = 'ele2';
@@ -747,17 +747,17 @@ ele2.appendChild(text2);
 console.log(ele2);
 element.replaceWith(ele2);
 
-   
-      //replace child
+ 
+//replace child
 
 let myul = document.getElementById('myul');
 myul.replaceChild(element,document.getElementById('fui'));
 
-       //remove element
+//remove element
 
 myul.removeChild(document.getElementById('lui'));
 
-      //get attributes
+//get attributes
 
 let att = ele2.getAttribute('id');
 att = ele2.getAttribute('class');
@@ -768,7 +768,7 @@ att = ele2.hasAttribute('class'); //true
 att = ele2.hasAttribute('img'); //false
 console.log(att);
 
-  //remove attributes
+//remove attributes
 
 ele2.removeAttribute('id');
 console.log(ele2);
@@ -777,7 +777,7 @@ console.log(ele2);
 */
 
 
-          //quick quiz
+//quick quiz
 
 // let link = document.getElementById('link');
 // let a = document.createElement('a');
@@ -793,7 +793,7 @@ console.log(ele2);
 // a.style.textDecoration = 'none';
 
 
-         //class 17 Evenets
+//class 17 Evenets
 
 // document.getElementById('heading').addEventListener('click',function(){
 //     console.log('you clicked the heading');
@@ -815,8 +815,8 @@ console.log(ele2);
 //     console.log(val);
 // })     
 
-        
-            //class18 more about events
+
+//class18 more about events
 
 // let btn = document.getElementById('btn');
 // btn.addEventListener('click',fun1);
@@ -828,7 +828,7 @@ console.log(ele2);
 //     console.log("Thanks",e)
 //     e.preventDefault();
 // }
- 
+
 // function fun2(e){
 //     console.log("Thans its a double click",e)
 //     e.preventDefault();
@@ -857,8 +857,8 @@ console.log(ele2);
 // })
 
 
-            // class 19 
-            
+// class 19 
+
 //excercise 1 solution
 
 // let str = "python";
@@ -873,7 +873,7 @@ console.log(ele2);
 // })
 
 
-          //class 20 local & session storage
+//class 20 local & session storage
 
 //item set in local storage
 //  localStorage.setItem('Name','Hello World');
@@ -900,14 +900,14 @@ console.log(ele2);
 
 
 
-               //session storage
+//session storage
 
 // sessionStorage.setItem('SessionName','Hello World');
 // sessionStorage.setItem('SessionNam2','Hey World');
 // sessionStorage.setItem('Sessioncolour',JSON.stringify(arr));
 
 
-           //class 21
+//class 21
 
 //excercise 2 , creating editable doiv using javascript
 
@@ -920,7 +920,7 @@ console.log(ele2);
 // })
 
 
-            //class 22-23 Math object
+//class 22-23 Math object
 /*
 
 let x = 3;
@@ -957,7 +957,7 @@ a100 = a*100 = (0,100);
 a10_100 = 10 + a*(100-1);
 */
 
-            //class 24 Date and time Object
+//class 24 Date and time Object
 
 /*
 
@@ -989,21 +989,22 @@ console.log(otherDate)
 
 */
 
-       //class 25 excercise 2 solution
+//class 25 excercise 2 solution
 
 
- //create element      
-               
+//create element      
+
+/*
 let divElement = document.createElement('div');
 
 //add text
 let val = localStorage.getItem('text');
 let text;
 if(val == null){
-   text = document.createTextNode("This is my Element, click to edit")
+  text = document.createTextNode("This is my Element, click to edit")
 }
 else{
-    text = document.createTextNode(val);
+   text = document.createTextNode(val);
 }
 divElement.appendChild(text)
 
@@ -1022,21 +1023,188 @@ container.insertBefore(divElement,first);
 //add event listner to divElement
 
 divElement.addEventListener('click',function(){
-    let noTextArea = document.getElementsByClassName('textarea').length;
+   let noTextArea = document.getElementsByClassName('textarea').length;
 
-    if(noTextArea == 0){
-    let html = elem.innerHTML
-    divElement.innerHTML =  `<textarea class="textarea form-control" id="textarea" rows="3">${html}</textarea>`;
+   if(noTextArea == 0){
+   let html = elem.innerHTML
+   divElement.innerHTML =  `<textarea class="textarea form-control" id="textarea" rows="3">${html}</textarea>`;
 
-    //listen for the blur event on text area
-    let textarea = document.getElementById('textarea');
-    textarea.addEventListener('blur',function(){
-        elem.innerHTML = textarea.value;
-        localStorage.setItem('text',textarea.value);
+   //listen for the blur event on text area
+   let textarea = document.getElementById('textarea');
+   textarea.addEventListener('blur',function(){
+       elem.innerHTML = textarea.value;
+       localStorage.setItem('text',textarea.value);
 
-    })
+   })
 }
 });
+
+*/
+
+//class 26-27
+
+//object oriented programming
+
+//objects literal for creating objects
+
+
+/*
+let car = {
+    name: "civic",
+    topSpeed: 250,
+    run: function () {
+        console.log('car is running');
+    }
+
+}
+
+//creating a constructor for cars
+
+function GeneralCar(givenName, givenSpeed) {
+    this.name = givenName;
+    this.topSpeed = givenSpeed;
+    this.run = function () {
+        console.log(`${this.name} is running`);
+    }
+    this.analyse = function () {
+        console.log(`${this.name}  is slower by ${200 - this.topSpeed}kmph than Mercedes`)
+    }
+}
+car1 = new GeneralCar('nissan', 160);
+car2 = new GeneralCar('corolla', 180);
+car3 = new GeneralCar('Mercedes',200);
+
+console.log(car1);
+console.log(car2);
+console.log(car3);
+
+*/
+
+     
+            //class 28 object prototype
+
+
+//object literals ; object.prototype
+
+/*
+
+let obj = {
+    name:"adnan",
+    course:"javascript",
+    totalClass: 62
+}
+
+function Obj(Newname){
+    this.name = Newname;
+}
+
+Obj.prototype.Newname = function(){
+    return this.name;
+}
+
+Obj.prototype.setName = function(newName){
+    this.name = newName
+
+}
+
+
+let obj2 = new Obj("Jeff Bezof");
+console.log(obj2);
+
+*/
+
+        //class 29-30 prototype inheritence
+
+
+const proto = {
+    slogan: function(){
+        return 'This company is the best';
+    },
+    changeName: function(newName){
+        this.name = newName;
+    }
+}
+
+//This create harry object
+/*
+const amazon = Object.create(proto);
+amazon.name = 'Amazon';
+amazon.role = 'E commerce';
+amazon.office = 'USA';
+amazon.changeName('amazon');
+console.log(amazon);
+*/
+
+//This also create harry object
+/*
+const amazon2 = Object.create(proto,{
+    name:{value: 'amazon2',writable:true},
+    role:{value: 'Online shopping store'}
+})
+amazon2.changeName('Amazon2')
+console.log(amazon2);
+*/
+
+
+//Employee constructor
+
+/*
+function Employee(name,salary,experience){
+    this.name = name;
+    this.salary = salary;
+    this.experience = experience;
+   
+}
+
+//slogan
+Employee.prototype.slogan = function(){
+    return `This company is the best, regard ${this.name}`
+}
+
+
+//object create
+
+let adnan = new Employee('Adnan',320000,5);
+console.log(adnan);
+console.log(adnan.slogan());
+
+//inheritence
+// New employee
+function Programmer(name,salary,experience,language){  
+    Employee.call(this,name,salary,experience);
+    this.language = language;
+}
+
+//Inherit the prototype
+Programmer.prototype = Object.create(Employee.prototype);
+
+//manually set the constructor
+Programmer.prototype.contructor = Programmer;
+
+
+let adii = new Programmer('Adii',210000,3,'javascript');
+console.log(adii);
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
