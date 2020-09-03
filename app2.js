@@ -115,58 +115,176 @@ console.log(books.issuedBooks);
 
           //37 callback function
 
+// const students = [
+//     {name:'adnan',subject:'javascript'},
+//     {name:'imran',subject:'javascript'}
+// ]
 
-let students = [
-    {name:"elen musk",owner:"tesla"},
-    {name:"jeff bezof",owner:"amazon"}
-]
+
+// function enrollStudent(student,callback){
+//     setTimeout(function(){
+//         students.push(student);
+//         console.log("student has been enrolled")
+//         callback();
+//     }, 3000);
+
+// }
+
+// function getStudents(){
+//     setTimeout(function(){
+//         let str = ""
+//         students.forEach(function(element){
+//             str += `<li>${element.name}</li>`
+//         })
+
+//         document.getElementById('students').innerHTML = str
+//         console.log("students have been fetched")
+
+//     }, 1000);
+
+// }
+
+// let newStudent = {name:'kami',subject:'python'}
+// enrollStudent(newStudent,getStudents);
 
 
-function enrollMember(member,callback){
-    setTimeout(function(){
-        students.push(member)
-        console.log("student enrolled");
-        callback();
-    },1000)
-}
 
-function getMembers(){
-    setTimeout(function(){
-        let str = "";
-        students.forEach(function(members){
-            str += `<li>${members.name}</li>`
-        });
+          //class 38 Excercise 5
 
-        document.getElementById('students').innerHTML = str;
-        console.log("student fetched")
+//you have to pretend word api which will contain an object and you have to print defination of all the result of that api.
+//You have to print it in the dom.If you are using bootstrap then its a plus
+
+
+// let word = document.getElementById('word');
+
+// let searchBtn = document.getElementById('searchBtn');
+
+// searchBtn.addEventListener('click',function(){
+//     console.log(word.value);
+//     word.value = "";
+
+//     const xhr = new XMLHttpRequest();
+
+//     xhr.open('GET','https://wordsapiv1.p.mashape.com/words/example',true)
+
+//     xhr.onload = function(){
+//         if(this.status === 200){
+//             let obj = JSON.parse(this.responseText);
+//             console.log(obj);
+
+//         }
+//         else{
+//             console.log('some error occur')
+//         }
+
+//     }
+//     xhr.send();
+// })
+
+
+            //chp 39 promises catch and than
+
+//  function fun1() {
+//      return new Promise(function(resolve,reject) {
+//          setTimeout(() => {
+
+//             let error = true
+//             if(!error){
+//                 console.log('Function: Your promise has been resolved')
+//                 resolve();
+//             }
+//             else{
+//                 console.log('Function: Your promise has not been resolved')
+//                 reject();
+//             }
+             
+//          }, 2000);
+         
+//      })
+     
+//  }           
+
+//  fun1().then(function(){
+//      console.log('Adnan: Thanks for resolving')
+//  }).catch(function(){
+//     console.log('Adnan: oops ');
+//  })
+     
+ 
+
+// let emp = [
+//     {Name:'Adnan',language:'Javascript'},
+//     {Name:'jaffer',language:'Javascript'}
+
+// ]
+    
+// function enrollEmp(employee){
+//     return new Promise(function(resolve,reject){
+//         setTimeout(() => {
+//             emp.push(employee);
+//             console.log('Employee has been enrolled');
+//             let error = false
+//             if(!error){
+//             resolve()
+//             }
+//             else{
+//                 reject();
+//             }
+//         }, 3000);
+//     })
+   
+
+// }
+
+// function getEmp(){
+//     setTimeout(() => {
         
-    }, 3000);
+//         let str = "";
+//         emp.forEach(function(element){
+//             str += `<li>${element.Name}</li>`
+//         });
+//         document.getElementById('students').innerHTML = str;
+//         console.log('Student has been fetched')
+//     }, 1000);
+
+// }
+
+// let newEmp = {Name:'ali',language:'Python'}
+// enrollEmp(newEmp).then(function(){
+//     getEmp();
+
+// }).catch(function(){
+//     console.log('Some error occured');
+// })
 
 
+
+           //class 40 Arrow function
+
+           //normal function
+// const adnan = function(){
+//     console.log('hello world')
+// }
+// adnan()
+
+//arrow function
+
+const adnan = ()=>{
+    console.log('hello world')
 }
+adnan();
 
-let newMember = {name : "jack maa",owner:"ali baba"}
-enrollMember(newMember,getMembers);
-console.log(students);
+//function returning something
+//one line do not require braces and return. it will return automatically
 
+const greet = ()=> 'good morning';
+console.log(greet());
 
+//we use bracket if we want to use object in single line
+const name = ()=> ({Name:'adnan'});
+console.log(name());
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//return string using arrow function in single line
+//single argument
+const language = lang => lang;
+console.log(language('javascript'))
