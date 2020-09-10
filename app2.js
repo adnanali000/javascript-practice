@@ -353,7 +353,7 @@ postJsonData();
 */
 
              //class 43 assync / await
-
+/*
 async function getData(){
     console.log('inside get data')
     const response = await fetch('https://api.github.com/users');
@@ -369,8 +369,34 @@ console.log('after calling the getData');
 console.log(x);
 x.then(data => console.log(data));
 console.log('last line of this js file');
+*/
 
 
+        //class 44 error handling
+
+//pretend this is coming from a server as response
+
+let a = 'adnan bhai';
+a = undefined
+if(a != undefined){
+    throw new Error('this is not undefined')
+}else{
+    console.log('this is undefined');
+    
+}
+
+try {
+       //abcncjejje
+       console.log('we are inside try block')
+       functionAbc();
+} catch (error) {
+    console.log('are you okay')
+    console.log(error.name)
+    console.log(error.message)
+
+}finally {
+    console.log('finally block run')
+}
 
 
 
