@@ -269,22 +269,127 @@ console.log(books.issuedBooks);
 
 //arrow function
 
-const adnan = ()=>{
-    console.log('hello world')
+// const adnan = ()=>{
+//     console.log('hello world')
+// }
+// adnan();
+
+// //function returning something
+// //one line do not require braces and return. it will return automatically
+
+// const greet = ()=> 'good morning';
+// console.log(greet());
+
+// //we use bracket if we want to use object in single line
+// const name = ()=> ({Name:'adnan'});
+// console.log(name());
+
+// //return string using arrow function in single line
+// //single argument
+// const language = lang => lang;
+// console.log(language('javascript'))
+
+
+                //    class 42 fetch api
+
+//button
+ let mybtn = document.getElementById('mybtn');      
+
+//button
+let content = document.getElementById('content');
+
+function getData(){
+    console.log('started getdata')
+    url = 'adnan.txt';
+    fetch(url).then((response)=>{
+        console.log('inside first then')
+        return response.text();
+    }).then((data)=>{
+        console.log('inside second then')
+        console.log(data);
+    })
 }
-adnan();
 
-//function returning something
-//one line do not require braces and return. it will return automatically
+console.log('before running data')
+getData();
+console.log('after running data')
 
-const greet = ()=> 'good morning';
-console.log(greet());
 
-//we use bracket if we want to use object in single line
-const name = ()=> ({Name:'adnan'});
-console.log(name());
+//get json data through fetch api
 
-//return string using arrow function in single line
-//single argument
-const language = lang => lang;
-console.log(language('javascript'))
+function getJsonData(){
+    url = 'https://api.github.com/users';
+    fetch(url).then((response)=>{
+        return response.json();
+    }).then((data)=>{
+        console.log(data);
+    })
+}
+getJsonData();
+
+
+//POST REQUEST
+
+function postJsonData(){
+    url = 'http://dummy.restapiexample.com/api/v1/create';
+    data = '{"name":"hello world","salary":"123","age":"23"}'
+    param = {
+        method:'post',
+        headers: {
+            "content-Type":'application/json'
+        },
+        body: data
+
+        //if data is a object than use json.stringify(data)
+        //body:JSON.stringify(data)
+    }
+
+    fetch(url,param).then(response=>response.json())
+    .then(data=>console.log(data))
+}
+postJsonData();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
