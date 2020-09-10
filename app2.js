@@ -292,6 +292,7 @@ console.log(books.issuedBooks);
 
                 //    class 42 fetch api
 
+ /*               
 //button
  let mybtn = document.getElementById('mybtn');      
 
@@ -349,16 +350,25 @@ function postJsonData(){
 }
 postJsonData();
 
+*/
 
+             //class 43 assync / await
 
+async function getData(){
+    console.log('inside get data')
+    const response = await fetch('https://api.github.com/users');
+    console.log('before respnse')
+    const users = await response.json();
+    console.log('user resolved')
+    return users
+}
 
-
-
-
-
-
-
-
+console.log('before calling getData');
+let x = getData();
+console.log('after calling the getData');
+console.log(x);
+x.then(data => console.log(data));
+console.log('last line of this js file');
 
 
 
