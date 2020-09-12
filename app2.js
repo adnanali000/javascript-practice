@@ -679,14 +679,37 @@ if (nameRegex.test(val)){
 
 */
 
+       //class 48 character sets
 
+       /*
+let regex = /a[dyu]nan/; // can be d,y,u
+regex = /a[a-z]nan/; // can be any chr from a-z
+regex = /a[^xyz0-5]na[a-zA-z]/; // [^]can be any chr except xyz
+let str = 'a8naN bhai';
 
+//quantifiers : we user {}
+regex = /adna{2}n/; //match the quantity of chr i.e 'a' must be occur exactly two times
 
+regex = /adna{0,2}n/;// 'a' can occur exactly 0-2 (0,1,2) times
+str = 'adnaaan bhai'
 
+//Groupings : we use paranthesis for grouping()
 
+regex = /(har){2}([0-9]r){3}/
+str = 'harhar1r2r3r bhai';
 
+let res = regex.exec(str);
+console.log('The result from exec is ',res);
 
+if (regex.test(str)) {
+  console.log(`The string ${str} matches the expression ${regex.source}`);
+}
+else{
+  console.log(`The string ${str} does not match the expression ${regex.source}`);
 
+}
+
+*/
 
 
 
