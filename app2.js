@@ -647,13 +647,37 @@ function populate() {
 //console.log(result5);
 
 
+         //class 47 metacharacters
+/*
+let nameRegex = /adnan/;
+//metacharacters symbol
+nameRegex = /^adn/; //^ means expression will match if starts with
+
+nameRegex = /an$/; //$ at the string means expression will match if ends with
+
+nameRegex = /a.nan/; //. means expression will match any one character
+
+nameRegex = /a*nan/; //* means expression will match 0 or more characters
+
+nameRegex = /ad?nan?n/; //? means expression will match 0 or more characters
+
+nameRegex = /a\*nan/; //\* means expression will match the given value of back slash
 
 
 
-
-
+let val = 'adnan is a*nan';
+let ans = nameRegex.exec(val);
+console.log(ans);
   
+if (nameRegex.test(val)){
+  console.log(`The string ${val} matches the expression ${nameRegex.source}`);
+  
+}else{
+  console.log(`The string ${val} does not match the expression ${nameRegex.source}`);
 
+}
+
+*/
 
 
 
