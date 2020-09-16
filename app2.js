@@ -681,7 +681,8 @@ if (nameRegex.test(val)){
 
        //class 48 character sets
 
-       /*
+/*
+
 let regex = /a[dyu]nan/; // can be d,y,u
 regex = /a[a-z]nan/; // can be any chr from a-z
 regex = /a[^xyz0-5]na[a-zA-z]/; // [^]can be any chr except xyz
@@ -710,6 +711,54 @@ else{
 }
 
 */
+
+       //class 49 shorthand character classes
+
+
+let regex = /(har){2}([0-9]r){3}/
+regex = /\war/; //word character -,aplha,number
+regex = /\w+d1r/; // \w+ means one or more word character
+regex = /\Wbhai/; //non word character
+regex = /\W+bhai/; // \W+ means more than one non word character
+regex = /number \d999/; // \d means digit
+regex = /number \d+/; // \d+ means more than one digit
+regex = /\D999/; //D means non digit
+regex = /\D+999/; //D+ means more than one non digit
+regex = /\snumber 899/; //match white space character
+regex = /\s+number/; //match multiple white space
+regex = /\Snumber 899/; //S means non whites space chr
+regex = /\S+number 899/; //S means more than one non whites space chr
+
+regex = /2r3r\b/; //word boundary
+
+//assertions
+
+regex = /h(?=y)/;
+regex = /h(?!y)/;
+
+
+let str = 'harhy4rd1r2r3r $%^&*bhai      number        89999hello9999';
+
+
+
+let res = regex.exec(str);
+console.log('The result from exec is ',res);
+       
+if (regex.test(str)) {
+  console.log(`The string ${str} matches the expression ${regex.source}`);
+  }
+else{
+  console.log(`The string ${str} does not match the expression ${regex.source}`);
+  }
+
+
+
+
+
+
+
+
+
 
 
 
