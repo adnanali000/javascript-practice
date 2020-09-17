@@ -714,7 +714,7 @@ else{
 
        //class 49 shorthand character classes
 
-
+/*
 let regex = /(har){2}([0-9]r){3}/
 regex = /\war/; //word character -,aplha,number
 regex = /\w+d1r/; // \w+ means one or more word character
@@ -750,9 +750,37 @@ if (regex.test(str)) {
 else{
   console.log(`The string ${str} does not match the expression ${regex.source}`);
   }
+*/
+            //  class 50 iterators
 
+function fruitsIterator(values) {
+  let nextInd = 0;
+  return {
+    next:function(){
+      if(nextInd < values.length){
+        return {
+          value: values[nextInd++],
+          done:false
+        }
+      }
+      else{
+        return {
+          done:true
+        }
+      }
+    }
+  }
+  
+}
 
-
+let arr = ['apple','mango','grapes','banana'];
+console.log(arr);
+let fruits = fruitsIterator(arr);
+console.log(fruits.next().value);
+console.log(fruits.next().value);
+console.log(fruits.next().value);
+console.log(fruits.next().value);
+console.log(fruits.next());
 
 
 
