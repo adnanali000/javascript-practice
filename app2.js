@@ -752,7 +752,7 @@ else{
   }
 */
             //  class 50 iterators
-
+/*
 function fruitsIterator(values) {
   let nextInd = 0;
   return {
@@ -781,6 +781,34 @@ console.log(fruits.next().value);
 console.log(fruits.next().value);
 console.log(fruits.next().value);
 console.log(fruits.next());
+*/
+
+        //class 51 generators in javascript
+
+function* numbersGen(){
+  let i = 0;
+  // yield 1;
+  // yield 2;
+  // yield 3;
+  // yield 4;
+
+  while(true){
+    yield i++;
+  }
+
+}
+let gen = numbersGen();
+console.log(gen.next().value);
+console.log(gen.next().value);
+console.log(gen.next().value);
+console.log(gen.next().value);
+console.log(gen.next().value);
+
+
+
+
+
+
 
 
 
