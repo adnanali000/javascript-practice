@@ -785,6 +785,8 @@ console.log(fruits.next());
 
         //class 51 generators in javascript
 
+/*
+
 function* numbersGen(){
   let i = 0;
   // yield 1;
@@ -804,12 +806,84 @@ console.log(gen.next().value);
 console.log(gen.next().value);
 console.log(gen.next().value);
 
+*/
+
+        //  class 52 alarm clock 
+ 
+/*
+const alarmSubmit = document.getElementById('alarmSubmit');
+
+alarmSubmit.addEventListener('click',setAlarm);
+let audio = new Audio('https://interactive-examples.mdn.mozilla.net/media/examples/t-rex-roar.mp3')
+
+function ringBell() {
+  audio.play();
+}
+
+function setAlarm(e) {
+  e.preventDefault();
+  console.log('setting alarm');
+
+  const alarm = document.getElementById('alarm');
+  let alarmDate = new Date(alarm.value);
+  console.log(`Setting alarm ${alarmDate}`);
+
+  let now = new Date();
+  let timeToAlarm = alarmDate - now;
+  console.log(timeToAlarm);
+
+  if(timeToAlarm >= 0){
+    setTimeout(() => {
+      ringBell();
+    }, timeToAlarm);
+  }
+  
+
+  
+}
+*/
 
 
+        //class 53 for of loop vs for in loop
 
+let people = ['alex','morgan','shahid','akhtar'];
 
+//traditional for loop 
 
+// for (let index = 0; index < people.length; index++) {
+//   const element = people[index];
+//   console.log(element);
+// 
+//}
 
+//1 iterating an object using for in loop
+let obj = {
+  name:'adnan',
+  language:'javascript',
+  hobbies:'full stack developer'
+}
+
+for(let key in obj){
+  console.log(obj[key]);
+}
+
+//2 we can use for in with string to loop through all character
+let myString = 'hello world';
+for (const char in myString) {
+  console.log(myString[char]);
+} 
+   
+
+//for-of loop
+
+let fruits = ['apple','mango','banana','orange'];
+for (const element of fruits) {
+  console.log(element);
+}
+
+for (const iterator of myString) {
+  console.log(iterator);
+}
 
 
 
